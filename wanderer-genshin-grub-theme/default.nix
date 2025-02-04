@@ -1,7 +1,10 @@
-{ pkgs, inputs, ... }:
-{
-  packages = [
-    pkgs.git
-    pkgs.grub2
-  ];
-}
+{ pkgs, inputs, ... }: (
+  pkgs.stdenv.mkDerivation {
+    name = "wanderer-genshin-grub-theme";
+    src = ./.;
+    installPhase = ''
+      mkdir -p $out
+      cp -R $src/ $out
+    '';
+  }
+)
