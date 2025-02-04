@@ -36,16 +36,10 @@
           packages = {
             "wanderer-genshin-grub-theme" = pkgs.stdenv.mkDerivation {
               name = "wanderer-genshin-grub-theme";
-              src = ./.;
-              buildInputs = [
-                pkgs.grub2
-              ];
-              buildPhase = ''
-                # Nothing to do here...
-              '';
+              src = ./wanderer-genshin-grub-theme;
               installPhase = ''
                 mkdir -p $out
-                cp -r $src/wanderer-grub-theme $out
+                cp -r $src/ $out
               '';
             };
           };
