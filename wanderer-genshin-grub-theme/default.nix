@@ -5,10 +5,10 @@
     dontBuild = true;
     installPhase = ''
       runHook preInstall
-      
+
       mkdir -p $out/
-      cp -R $src $out
-    
+      cp -r $src/* $out
+
       runHook postInstall
     '';
   }
