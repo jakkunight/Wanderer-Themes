@@ -1,5 +1,7 @@
-title-text: ""
-desktop-image: "background.png"
+title-text: "Select an OS, you scum!"
+title-font: "HYWenHei Regular 32"
+desktop-image: "background.jpg"
+desktop-image-scale-method: "stretch"
 terminal-left: "0"
 terminal-top: "0"
 terminal-border: "0"
@@ -11,6 +13,7 @@ terminal-height: "100%"
   top = 47%
   width = 472
   height = 35%
+  item_font: "HYWenHei Regular 24"
   item_color = "#cccccc"
   selected_item_color = "#ffffff"
   item_icon_space = 15
@@ -27,4 +30,5 @@ terminal-height: "100%"
   id = "__timeout__"
   text = "Selected OS will start in %d seconds"
   color = "#cccccc"
+  item_font: "HYWenHei Regular 24"
 }
