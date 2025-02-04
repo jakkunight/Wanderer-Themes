@@ -4,8 +4,12 @@
     src = ./.;
     dontBuild = true;
     installPhase = ''
+      runHook preInstall
+      
       mkdir -p $out/
-      cp -R $src/icons $src/theme.txt $src/*.png $src/*.jpg $src/*.pf2 $out
+      cp -R $src/**/* $out
+    
+      runHook postInstall
     '';
   }
 )
