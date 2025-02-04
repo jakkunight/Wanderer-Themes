@@ -12,7 +12,7 @@
   in
   {
     packages.${system} = {
-      grub-theme = ./wanderer-genshin-grub-theme { inherit pkgs; };
+      grub-theme = import ./wanderer-genshin-grub-theme { inherit pkgs; };
     };
   };
 }
