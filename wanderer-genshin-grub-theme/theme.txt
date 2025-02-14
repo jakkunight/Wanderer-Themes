@@ -1,6 +1,6 @@
 title-text: "Select an OS, you scum!"
 title-font: "HYWenHei Regular 32"
-item_color: "#ffffff"
+title-color: "#ffffff"
 desktop-image: "background.png"
 desktop-image-scale-method: "stretch"
 terminal-left: "0"
